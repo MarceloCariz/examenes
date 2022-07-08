@@ -8,7 +8,7 @@ const CardResultado = ({
   DOCENTE_QUE_TOMA_EXAMEN,
   SALA
 }) => {
-    console.log(SALA)
+    // console.log(SALA)
   return (
            
             <tr className="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-700 even:dark:bg-gray-700 dark:text-white">

@@ -8,14 +8,17 @@ const Resultado = () => {
   const [examenes, setExamenes] = useState([]);
   useEffect(() => {
       // const {RUT} = data;
-      const resultado = obtenerRut(rut);
+      const obtenerExamenes = async()=>{
+         const resultado = await obtenerRut(rut)
+          setExamenes(resultado)
+      }
       // 195739374
-      setExamenes(resultado);
-      // console.log(resultado)
+      // setExamenes(resultado);
+      obtenerExamenes()
 
   }, [rut]);
 
-  console.log(examenes)
+  // console.log(examenes)
 
   //   examenes.map((estudiante, i) =>( console.log(i)))
 

@@ -13,7 +13,7 @@ const IngresoRut = () => {
   const handleSubmit = (e) =>{
     e.preventDefault();
     // console.log(rut.length)
-
+    // obtenerRut()
     if(rut.length > 10  || rut.length < 8 || rut.length === undefined){
         setError('Rut invalido');
         return;

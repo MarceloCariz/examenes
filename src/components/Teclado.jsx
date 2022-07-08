@@ -96,13 +96,7 @@ const Teclado = ({setError, setRut, rut}) => {
         keyboardRef={r => (keyboard.current = r)}
         // layoutName={layout}
         maxLength={9}
-        buttonAttributes={ [
-          {
-            attribute: "aria-label",
-            value: "BORRAR",
-            button: "{bksp}"
-          },
-        ]}
+       
         layout={layout}
         theme={"hg-theme-default hg-layout-default myTheme "}
         onChange={onChange}
